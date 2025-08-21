@@ -1,0 +1,48 @@
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ลิงก์ครอบเต็มหน้า */
+.full-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+/* รูปเต็มจอ */
+.full-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ดาว */
+.star {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: yellow;
+  border-radius: 50%;
+  animation: twinkle 1.5s infinite alternate;
+}
+
+/* แอนิเมชันกระพริบ */
+@keyframes twinkle {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0.2; transform: scale(0.6); }
+}
